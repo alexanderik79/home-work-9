@@ -9,7 +9,8 @@
     --gap: 20px;
     --gap-lg: 40px;
     --gap-sm: 10px;
-    
+    --font-weight-small: 400;
+    --font-weight-big: 500;
 }
 
 * {
@@ -60,14 +61,14 @@ header ul li:hover {
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: var(--font-weight-big);
     font-size: 48px;
     line-height: 78px;
 }
 
 p {
     color: var(--grey);
-    font-weight: 400;
+    font-weight: var(--font-weight-small);
     font-size: var(--font-size);
     line-height: 26px;
     max-width: 540px;
@@ -115,7 +116,7 @@ p {
 
 h2 {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: var(--font-weight-big);
     line-height: 37px;
     text-align: center;
 }
@@ -128,7 +129,7 @@ iframe {
 
 footer p:first-child {
     font-size: 21px;
-    font-weight: 500;
+    font-weight: var(--font-weight-big);
     line-height: 25px;
     color: var(--white);
     padding: 0 0 20px 0;
@@ -136,7 +137,7 @@ footer p:first-child {
 
 footer p:last-child {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: var(--font-weight-small);
     line-height: 21px;
     color: var(--white);
     padding: 0;
