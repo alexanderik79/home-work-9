@@ -1,0 +1,147 @@
+:root {
+    --font-size: 16px;
+    --font: Roboto, sans-serif;
+    --black: #000;
+    --white: #fff;
+    --blue: #34547A;
+    --grey: #727272;
+    --light-grey: #EEEFF1;
+    --gap: 20px;
+    --gap-lg: 40px;
+    --gap-sm: 10px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0 var(--gap);
+    margin: 0 auto;
+}
+
+.bg-grey {
+    background-color: var(--light-grey);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+
+header {
+    padding: 80px 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: var(--gap);
+}
+
+header ul li:hover {
+    color: var(--blue);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-section {
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 78px;
+}
+
+p {
+    color: var(--grey);
+    font-weight: 400;
+    font-size: var(--font-size);
+    line-height: 26px;
+    max-width: 540px;
+    padding: 60px 0 65px;
+}
+
+.button {
+    padding: 19px 41px 20px;
+    background-color: var(--blue);
+    line-height: 26px;
+    color: var(--white);
+    font-size: var(--font-size);
+    border: none;
+}
+
+.button:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.second-section, .fourth-section {
+    padding: 112px var(--gap) 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section p, .fourth-section p {
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.third-section {
+    padding: 100px 0;
+}
+
+.third-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: center;
+}
+
+iframe {
+    width: 1110px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+footer p:first-child {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--white);
+    padding: 0 0 20px 0;
+}
+
+footer p:last-child {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--white);
+    padding: 0;
+}
+
+footer {
+    padding: 50px;
+}
