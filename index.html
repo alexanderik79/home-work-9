@@ -6,11 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header class="bg-grey">
-        <nav class="container">
+        <nav class="container nav-desk">
             <ul>
                 <li><a>ГЛАВНАЯ</a></li>
                 <li><a>ОБ АВТОРЕ</a></li>
@@ -18,6 +19,22 @@
                 <li><a>ПРОЦЕСС</a></li>
                 <li><a>КОНТАКТЫ</a></li>
             </ul>
+        </nav>
+
+        <nav class="container nav-mobile">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="nav-mobile-list">
+                <ul class="ul-mobile">
+                    <li><a>ГЛАВНАЯ</a></li>
+                    <li><a>ОБ АВТОРЕ</a></li>
+                    <li><a>РАБОТЫ</a></li>
+                    <li><a>ПРОЦЕСС</a></li>
+                    <li><a>КОНТАКТЫ</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

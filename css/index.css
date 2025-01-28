@@ -1,5 +1,6 @@
 :root {
     --font-size: 16px;
+    --font-size-mob: 12px;
     --font: Roboto, sans-serif;
     --black: #000;
     --white: #fff;
@@ -38,7 +39,6 @@ html {
     background-color: var(--blue);
 }
 
-
 header {
     padding: 80px 0;
 }
@@ -47,6 +47,10 @@ ul {
     list-style: none;
     display: flex;
     gap: var(--gap);
+}
+
+.nav-mobile {
+    display: none;
 }
 
 header ul li:hover {
@@ -122,8 +126,8 @@ h2 {
 }
 
 iframe {
-    width: 1110px;
-    height: 600px;
+    width: 90%;
+    aspect-ratio: 16 / 9;
     margin-top: 50px;
 }
 
@@ -145,4 +149,227 @@ footer p:last-child {
 
 footer {
     padding: 50px;
+}
+
+.fa-bars {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- STYLES FOR PAD --------------------------------- */
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    html {
+        font-size: var(--font-size);
+    }
+    
+    .container {
+        max-width: 1000px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }    
+    
+    header {
+        padding: 40px 0;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .main-section {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        line-height: 48px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 540px;
+        padding: 30px 0 35px;
+    }
+    
+    .button {
+        padding: 17px 38px 18px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    .second-section, .fourth-section {
+        padding: 80px 10px 80px;
+    }
+    
+    .third-section {
+        padding: 80px 0;
+    }
+    
+    .third-section ul {
+        gap: 35px;
+    }
+    
+    h2 {
+        font-size: 28px;
+        font-weight: var(--font-weight-big);
+        line-height: 32px;
+    }
+    
+    iframe {
+        margin-top: 40px;
+    }
+    
+    footer p:first-child {
+        font-size: 18px;
+        font-weight: var(--font-weight-big);
+        line-height: 20px;
+        padding: 0 0 10px 0;
+    }
+    
+    footer p:last-child {
+        font-size: 13px;
+        font-weight: var(--font-weight-small);
+        line-height: 18px;
+    }
+    
+    footer {
+        padding: 40px;
+    }
+}
+
+
+
+/* ---------------------------- STYLES FOR MOBILE --------------------------------- */
+
+@media (max-width: 599px) {
+
+    html {
+        font-size: var(--font-size-mob);
+    }
+    
+    .container {
+        max-width: 90%;
+        padding: 0 5px;
+        margin: 0 auto;
+    }    
+    
+    header {
+        padding: 20px 0;
+    }
+    
+    .ul-mobile {
+        display: block;
+        gap: var(--gap);
+        padding-top: 10px;
+        margin-left: 0;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    .checkbtn {
+        font-size: 32px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+    
+    #check:checked ~ .checkbtn i {
+        transform: rotate(180deg); 
+    }
+
+    .nav-desk {
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .fa-bars {
+        transform: rotate(0deg); 
+        transition: transform 0.3s ease; 
+    }
+
+    .nav-mobile-list {
+        display: none;
+        font-size: 20px;
+        transition: all 0.3 ease;
+    }
+    
+    #check:checked ~ .nav-mobile-list {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: block;
+    }  
+    
+    .main-section {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    
+    p {
+        font-size: 10px;
+        line-height: 18px;
+        max-width: 540px;
+        padding: 15px 0 20px;
+    }
+    
+    .button {
+        padding: 12px 28px 14px;
+        line-height: 10px;
+        font-size: 10px;
+    }
+    
+    .second-section, .fourth-section {
+        padding: 40px 5px 40px;
+    }
+    
+    .third-section {
+        padding: 40px 0;
+    }
+    
+    .third-section ul {
+        gap: 20px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        font-weight: var(--font-weight-small);
+        line-height: 18px;
+    }
+    
+    iframe {
+        margin-top: 20px;
+    }
+    
+    footer p:first-child {
+        font-size: 14px;
+        font-weight: var(--font-weight-small);
+        line-height: 10px;
+        padding: 0 0 5px 0;
+    }
+    
+    footer p:last-child {
+        font-size: 10px;
+        font-weight: var(--font-weight-small);
+        line-height: 20px;
+    }
+    
+    footer {
+        padding: 20px;
+    }
 }
