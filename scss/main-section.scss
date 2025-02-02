@@ -1,0 +1,34 @@
+.main-section {
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+
+h1 {
+    font-weight: var(--font-weight-big);
+    font-size: 48px;
+    line-height: 78px;
+}
+
+p {
+    color: var(--grey);
+    font-weight: var(--font-weight-small);
+    font-size: var(--font-size);
+    line-height: 26px;
+    max-width: 540px;
+    padding: 60px 0 65px;
+}
+
+.button {
+    padding: 19px 41px 20px;
+    background-color: var(--blue);
+    line-height: 26px;
+    color: var(--white);
+    font-size: var(--font-size);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+}
