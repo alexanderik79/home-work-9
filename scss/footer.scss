@@ -1,20 +1,20 @@
 footer {
     padding: 50px;
-    background-color: var(--black);
+    background-color: $black;
 }
 
 footer p:first-child {
     font-size: 21px;
-    font-weight: var(--font-weight-big);
+    font-weight: $font-weight-big;
     line-height: 25px;
-    color: var(--white);
+    color: $white;
     padding: 0 0 20px 0;
 }
 
 footer p:last-child {
     font-size: 13px;
-    font-weight: var(--font-weight-small);
+    font-weight: $font-weight-small;
     line-height: 21px;
-    color: var(--white);
+    color: $white;
     padding: 0;
 }

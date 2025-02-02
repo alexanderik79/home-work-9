@@ -5,7 +5,7 @@ header {
 ul {
     list-style: none;
     display: flex;
-    gap: var(--gap);
+    gap: $gap;
 }
 
 .nav-mobile {
@@ -13,7 +13,7 @@ ul {
 }
 
 header ul li:hover {
-    color: var(--blue);
+    color: $blue;
     cursor: pointer;
     transition: 0.3s;
 }

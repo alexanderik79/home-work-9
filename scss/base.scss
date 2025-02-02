@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font);
+    font-family: $font;
 }
 
 html {
-    font-size: var(--font-size);
+    font-size: $font-size;
 }
 
 .container {
     max-width: 1110px;
-    padding: 0 var(--gap);
+    padding: 0 $gap;
     margin: 0 auto;
 }
 
 .bg-grey {
-    background-color: var(--light-grey);
+    background-color: $light-grey;
 }
 
 .bg-blue {
-    background-color: var(--blue);
+    background-color: $blue;
 }

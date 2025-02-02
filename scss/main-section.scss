@@ -4,15 +4,15 @@
 }
 
 h1 {
-    font-weight: var(--font-weight-big);
+    font-weight: $font-weight-big;
     font-size: 48px;
     line-height: 78px;
 }
 
 p {
-    color: var(--grey);
-    font-weight: var(--font-weight-small);
-    font-size: var(--font-size);
+    color: $grey;
+    font-weight: $font-weight-small;
+    font-size: $font-size;
     line-height: 26px;
     max-width: 540px;
     padding: 60px 0 65px;
@@ -20,10 +20,10 @@ p {
 
 .button {
     padding: 19px 41px 20px;
-    background-color: var(--blue);
+    background-color: $blue;
     line-height: 26px;
-    color: var(--white);
-    font-size: var(--font-size);
+    color: $white;
+    font-size: $font-size;
     border: none;
     cursor: pointer;
 }

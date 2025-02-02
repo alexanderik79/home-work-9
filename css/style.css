@@ -1,42 +1,26 @@
-:root {
-  --font-size: 16px;
-  --font-size-mob: 12px;
-  --font: Roboto, sans-serif;
-  --black: #000;
-  --white: #fff;
-  --blue: #34547A;
-  --grey: #727272;
-  --light-grey: #EEEFF1;
-  --gap: 20px;
-  --gap-lg: 40px;
-  --gap-sm: 10px;
-  --font-weight-small: 400;
-  --font-weight-big: 500;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
+  font-family: Roboto, sans-serif;
 }
 
 html {
-  font-size: var(--font-size);
+  font-size: 16px;
 }
 
 .container {
   max-width: 1110px;
-  padding: 0 var(--gap);
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 .bg-grey {
-  background-color: var(--light-grey);
+  background-color: #EEEFF1;
 }
 
 .bg-blue {
-  background-color: var(--blue);
+  background-color: #34547A;
 }
 
 header {
@@ -46,7 +30,7 @@ header {
 ul {
   list-style: none;
   display: flex;
-  gap: var(--gap);
+  gap: 20px;
 }
 
 .nav-mobile {
@@ -54,7 +38,7 @@ ul {
 }
 
 header ul li:hover {
-  color: var(--blue);
+  color: #34547A;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -65,15 +49,15 @@ header ul li:hover {
 }
 
 h1 {
-  font-weight: var(--font-weight-big);
+  font-weight: 500;
   font-size: 48px;
   line-height: 78px;
 }
 
 p {
-  color: var(--grey);
-  font-weight: var(--font-weight-small);
-  font-size: var(--font-size);
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 26px;
   max-width: 540px;
   padding: 60px 0 65px;
@@ -81,10 +65,10 @@ p {
 
 .button {
   padding: 19px 41px 20px;
-  background-color: var(--blue);
+  background-color: #34547A;
   line-height: 26px;
-  color: var(--white);
-  font-size: var(--font-size);
+  color: #fff;
+  font-size: 16px;
   border: none;
   cursor: pointer;
 }
@@ -95,7 +79,7 @@ p {
 }
 
 .second-section {
-  padding: 112px var(--gap) 100px;
+  padding: 112px 20px 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -120,7 +104,7 @@ p {
 }
 
 .fourth-section {
-  padding: 112px var(--gap) 100px;
+  padding: 112px 20px 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -137,31 +121,31 @@ p {
 
 footer {
   padding: 50px;
-  background-color: var(--black);
+  background-color: #000;
 }
 
 footer p:first-child {
   font-size: 21px;
-  font-weight: var(--font-weight-big);
+  font-weight: 500;
   line-height: 25px;
-  color: var(--white);
+  color: #fff;
   padding: 0 0 20px 0;
 }
 
 footer p:last-child {
   font-size: 13px;
-  font-weight: var(--font-weight-small);
+  font-weight: 400;
   line-height: 21px;
-  color: var(--white);
+  color: #fff;
   padding: 0;
 }
 
 html {
-  font-size: var(--font-size);
+  font-size: 16px;
 }
 @media (max-width: 599px) {
   html {
-    font-size: var(--font-size-mob);
+    font-size: 12px;
   }
 }
 
