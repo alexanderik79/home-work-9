@@ -1,19 +1,18 @@
 header {
     padding: 80px 0;
-}
+    ul {
+        list-style: none;
+        display: flex;
+        gap: $gap;
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: $gap;
+        li:hover {
+            color: $blue;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
 }
 
 .nav-mobile {
     display: none;
-}
-
-header ul li:hover {
-    color: $blue;
-    cursor: pointer;
-    transition: 0.3s;
 }
