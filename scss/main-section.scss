@@ -1,34 +1,34 @@
 .main-section {
     padding-top: 80px;
     padding-bottom: 140px;
-}
 
-h1 {
-    font-weight: $font-weight-big;
-    font-size: 48px;
-    line-height: 78px;
-}
+    h1 {
+        font-weight: $font-weight-big;
+        font-size: 48px;
+        line-height: 78px;
+    }
 
-p {
-    color: $grey;
-    font-weight: $font-weight-small;
-    font-size: $font-size;
-    line-height: 26px;
-    max-width: 540px;
-    padding: 60px 0 65px;
-}
+    p {
+        color: $grey;
+        font-weight: $font-weight-small;
+        font-size: $font-size;
+        line-height: 26px;
+        max-width: 540px;
+        padding: 60px 0 65px;
+    }
 
-.button {
-    padding: 19px 41px 20px;
-    background-color: $blue;
-    line-height: 26px;
-    color: $white;
-    font-size: $font-size;
-    border: none;
-    cursor: pointer;
-}
-
-.button:hover {
-    transition: 0.3s;
-    opacity: 0.8;
+    .button {
+        padding: 19px 41px 20px;
+        background-color: $blue;
+        line-height: 26px;
+        color: $white;
+        font-size: $font-size;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        transition: 0.3s;
+        opacity: 0.8;
+    }
 }
