@@ -23,15 +23,21 @@ html {
   background-color: #34547A;
 }
 
+.nav-desk {
+  display: none;
+}
+
 header {
   padding: 80px 0;
 }
-header ul {
+
+ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-header ul li:hover {
+
+li:hover {
   color: #34547A;
   cursor: pointer;
   transition: 0.3s;
@@ -169,7 +175,7 @@ ul {
 @media (max-width: 599px) {
   ul {
     display: block;
-    gap: var(--gap);
+    gap: 20px;
     padding-top: 10px;
     margin-left: 0;
   }
@@ -178,6 +184,7 @@ ul {
 @media (max-width: 599px) {
   li {
     padding: 5px;
+    display: block;
   }
 }
 
@@ -298,13 +305,13 @@ p {
 
 h2 {
   font-size: 28px;
-  font-weight: var(--font-weight-big);
+  font-weight: 500;
   line-height: 32px;
 }
 @media (max-width: 599px) {
   h2 {
     font-size: 16px;
-    font-weight: var(--font-weight-small);
+    font-weight: 400;
     line-height: 18px;
   }
 }
@@ -328,21 +335,21 @@ footer {
 }
 footer p:first-child {
   font-size: 18px;
-  font-weight: var(--font-weight-big);
+  font-weight: 500;
   line-height: 20px;
   padding: 0 0 10px 0;
 }
 @media (max-width: 599px) {
   footer p:first-child {
     font-size: 14px;
-    font-weight: var(--font-weight-small);
+    font-weight: 400;
     line-height: 10px;
     padding: 0 0 5px 0;
   }
 }
 footer p:last-child {
   font-size: 13px;
-  font-weight: var(--font-weight-small);
+  font-weight: 400;
   line-height: 18px;
 }
 @media (max-width: 599px) {

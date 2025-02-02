@@ -45,7 +45,7 @@ ul {
   gap: 10px;
   @include responsive(mobile) {
     display: block;
-    gap: var(--gap);
+    gap: $gap;
     padding-top: 10px;
     margin-left: 0;
   }
@@ -54,6 +54,7 @@ ul {
 li {
   @include responsive(mobile) {
     padding: 5px;
+    display: block;
   }
 }
 
@@ -158,11 +159,11 @@ p {
 
 h2 {
   font-size: 28px;
-  font-weight: var(--font-weight-big);
+  font-weight: $font-weight-big;
   line-height: 32px;
   @include responsive(mobile) {
     font-size: 16px;
-    font-weight: var(--font-weight-small);
+    font-weight: $font-weight-small;
     line-height: 18px;
   }
 }
@@ -181,19 +182,19 @@ footer {
   }
   p:first-child {
     font-size: 18px;
-    font-weight: var(--font-weight-big);
+    font-weight: $font-weight-big;
     line-height: 20px;
     padding: 0 0 10px 0;
     @include responsive(mobile) {
       font-size: 14px;
-      font-weight: var(--font-weight-small);
+      font-weight: $font-weight-small;
       line-height: 10px;
       padding: 0 0 5px 0;
     }
   }
   p:last-child {
     font-size: 13px;
-    font-weight: var(--font-weight-small);
+    font-weight: $font-weight-small;
     line-height: 18px;
     @include responsive(mobile) {
       font-size: 10px;
