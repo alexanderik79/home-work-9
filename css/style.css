@@ -112,6 +112,8 @@ p {
 }
 .fourth-section iframe {
   margin-top: 20px;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 .fourth-section p {
