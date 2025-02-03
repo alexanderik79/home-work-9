@@ -10,11 +10,10 @@ $breakpoints: (
       @content;
     }
   } @else if $device == desk {
-    @media (min-width: 600px) {
+    @media (min-width: 599px) {
       @content;
     }
   }
-
 }
 
 html {
