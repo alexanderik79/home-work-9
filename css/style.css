@@ -218,14 +218,16 @@ ul {
 .nav-desk {
   display: none;
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
   .nav-desk {
     display: block;
   }
 }
 
-.nav-mobile {
-  display: block;
+@media (max-width: 599px) {
+  .nav-mobile {
+    display: block;
+  }
 }
 
 .main-section {

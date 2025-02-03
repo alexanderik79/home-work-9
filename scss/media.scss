@@ -1,6 +1,7 @@
 $breakpoints: (
   mobile: 599px,
-  tablet: 1023px
+  tablet: 1023px,
+  desk: 1024px
 );
 
 @mixin responsive($device) {
@@ -8,11 +9,12 @@ $breakpoints: (
     @media (max-width: map-get($breakpoints, mobile)) {
       @content;
     }
-  } @else if $device == tablet {
-    @media (min-width: 600px) and (max-width: map-get($breakpoints, tablet)) {
+  } @else if $device == desk {
+    @media (min-width: 600px) {
       @content;
     }
   }
+
 }
 
 html {
@@ -87,13 +89,15 @@ li {
 
 .nav-desk {
   display: none;
-  @include responsive(tablet) {
+  @include responsive(desk) {
     display: block;
   }
 }
 
 .nav-mobile {
-  display: block;
+  @include responsive(mobile) {
+    display: block;
+  }
 }
 
 .main-section {
