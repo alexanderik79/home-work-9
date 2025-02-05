@@ -10,7 +10,7 @@ $breakpoints: (
       @content;
     }
   } @else if $device == desk {
-    @media (min-width: 599px) {
+    @media (min-width: map-get($breakpoints, mobile)) {
       @content;
     }
   }
